@@ -1,0 +1,9 @@
+version: '2'
+services:
+    microservice:
+        build: .
+        image: propublica:1.9.2-alpine
+        environment:
+        - PORT=9090
+        ports:
+        - "8080:9090"
